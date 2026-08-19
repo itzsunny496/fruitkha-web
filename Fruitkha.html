@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruitkha | Fresh seasonal fruit</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+</head>
+
+<body class="relative scroll-smooth bg-[#f8fafc] text-[#123047]">
+    
+        <section id="home"
+            class="relative min-h-[42rem] scroll-mt-4 overflow-hidden bg-[url('./assets/images/hero-bg.jpg')] bg-cover bg-center pb-32 text-white sm:pb-80">
+            <div class="absolute top-0 right-0 bottom-0 left-0 bg-[#123047]/40 z-0"></div>
+            <header class="sticky top-0 z-10 flex items-center justify-between bg-transparent px-6 py-5 shadow-none backdrop-blur-none sm:px-28">
+                <a href="Fruitkha.html" class="flex items-center gap-2 text-white">
+                    <img class="w-20 sm:w-36" src="./assets/images/logo.png"
+                        alt="Fruitkha logo">
+                </a>
+                <nav class="hidden items-center gap-8 text-[18px] font-semibold text-black md:flex" aria-label="Primary navigation">
+                    <a href="#home" class="text-[#0f766e] hover:text-[#0f766e]">Home</a>
+                    <a href="#about" class="hover:text-[#0f766e]">About</a>
+                    <a href="#products" class="hover:text-[#0f766e]">Shop</a>
+                    <a href="#sale" class="hover:text-[#0f766e]">News</a>
+                    <a href="#contact" class="hover:text-[#0f766e]">Contact</a>
+                </nav>
+
+                <div class="flex items-center gap-3 text-white">
+                    <a href="#" id="cart-link" class="hidden text-lg hover:text-[#facc15] md:block" aria-label="Shopping cart"><i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#" class="text-lg hover:text-white sm:hover:text-[#facc15]"><i
+                            class="fa-solid fa-magnifying-glass"></i></a>
+                    <button onclick="sidemode()" aria-label="Open navigation menu"
+                        class="flex h-8 w-8 items-center justify-center rounded-sm bg-[#facc15] sm:hidden text-[#123047]">
+                        <i class="fa-solid fa-bars text-sm"></i>
+                    </button>
+                </div>
+            </header>
+
+            <article class="relative z-10 mt-32 flex items-center justify-center px-4 pb-10 text-center sm:mt-44 sm:px-6">
+                <div class="w-full">
+                    <p class="mb-6 text-[15px] font-bold text-[#facc15] sm:text-[18px]">F R E S H & O R G A N I C</p>
+                    <h1 class="max-w-4xl text-[clamp(2.25rem,8vw,3.5rem)] font-extrabold leading-tight text-white drop-shadow-[0_3px_28px_rgba(0,0,0,0.3)]">Delicious Seasonal Fruits</h1>
+
+                    <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                        <a href="#products"
+                            class="block w-full max-w-80 rounded-full border-2 border-[#0f766e] bg-[#0f766e] p-3 px-5 font-bold text-white shadow-[0_12px_24px_rgba(15,118,110,0.25)] transition hover:-translate-y-0.5 hover:bg-[#facc15] hover:text-[#123047]">Fruit
+                            Collection</a>
+                        <a href="#contact"
+                            class="block w-80 sm:w-fit rounded-full border-2 border-[#facc15] bg-transparent p-3 px-5 font-bold text-white hover:bg-[#facc15] hover:text-[#123047]">Contact
+                            Us</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="benefits" class="scroll-mt-4 bg-[#f8fafc] px-4 py-8 text-[#123047] sm:px-16">
+            <ul class="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-6 sm:grid-cols-3">
+                <li class="flex min-w-0 items-center gap-4">
+                    <div
+                        class="flex h-20 w-20 items-center justify-center rounded-full border-2 border-dashed border-[#facc15] text-3xl text-[#0f766e]">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <h2 class="text-2xl font-bold text-[#0f766e]">Free Shipping</h2>
+                        <p class="text-gray-700">When order over $75</p>
+                    </div>
+                </li>
+
+                <li class="flex min-w-0 items-center gap-4">
+                    <div
+                        class="flex h-20 w-20 items-center justify-center rounded-full border-2 border-dashed border-[#facc15] text-3xl text-[#0f766e]">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <h2 class="text-2xl font-bold text-[#0f766e]">24/7 Support</h2>
+                        <p class="text-gray-700">Get support all day</p>
+                    </div>
+                </li>
+
+                <li class="flex min-w-0 items-center gap-4">
+                    <div
+                        class="flex h-20 w-20 items-center justify-center rounded-full border-2 border-dashed border-[#facc15] text-3xl text-[#0f766e]">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <h2 class="text-2xl font-bold text-[#0f766e]">Refund</h2>
+                        <p class="text-gray-700">Get refund within 3 days!</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="products" class="scroll-mt-4 bg-[#ecfeff] px-4 py-16 text-[#123047] sm:px-16">
+            <header class="mb-10 text-center">
+                <h2 class="text-4xl font-extrabold text-[#123047] sm:text-5xl">
+                    <span class="text-[#0f766e]">Our</span> Products
+                </h2>
+                <div class="mx-auto mt-3 h-1 w-20 bg-[#facc15]"></div>
+                <p class="mx-auto mt-4 text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquid, fuga quas itaque eveniet beatae
+                    optio.
+                </p>
+            </header>
+
+            <div class="mx-auto grid w-full max-w-7xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <article class="min-w-0 rounded-2xl border border-[#123047]/10 bg-white p-4 shadow-xl transition hover:-translate-y-2 hover:shadow-[0_22px_45px_rgba(18,48,71,0.16)]">
+                    <div class="flex h-60 items-center justify-center ">
+                        <img class="h-full w-full object-contain"
+                            src="./assets/images/products/product-img-1.jpg"
+                            alt="Strawberry">
+                    </div>
+                    <div class="mt-4 text-center">
+                        <h3 class="text-3xl font-bold text-black">Strawberry</h3>
+                        <p class="mt-2 text-gray-600">Per Kg</p>
+                        <p class="mt-2 text-4xl font-extrabold text-black">85$</p>
+                        <button data-product="Strawberry" class="add-to-cart mt-5 w-full rounded-full bg-[#0f766e] px-4 py-3 text-lg font-bold text-white shadow-[0_12px_24px_rgba(15,118,110,0.25)] transition hover:-translate-y-0.5 hover:bg-[#facc15] hover:text-[#123047]">Add
+                            to Cart</button>
+                    </div>
+                </article>
+
+                <article class="min-w-0 rounded-2xl border border-[#123047]/10 bg-white p-4 shadow-xl transition hover:-translate-y-2 hover:shadow-[0_22px_45px_rgba(18,48,71,0.16)]">
+                    <div class="flex h-60 items-center justify-center">
+                        <img class="h-full w-full object-contain"
+                            src="./assets/images/products/product-img-2.jpg"
+                            alt="Grapes">
+                    </div>
+                    <div class="mt-4 text-center">
+                        <h3 class="text-3xl font-bold text-black">Berry</h3>
+                        <p class="mt-2 text-gray-600">Per Kg</p>
+                        <p class="mt-2 text-4xl font-extrabold text-black">70$</p>
+                        <button data-product="Berry" class="add-to-cart mt-5 w-full rounded-full bg-[#0f766e] px-4 py-3 text-lg font-bold text-white shadow-[0_12px_24px_rgba(15,118,110,0.25)] transition hover:-translate-y-0.5 hover:bg-[#facc15] hover:text-[#123047]">Add
+                            to Cart</button>
+                    </div>
+                </article>
+
+                <article class="min-w-0 rounded-2xl border border-[#123047]/10 bg-white p-4 shadow-xl transition hover:-translate-y-2 hover:shadow-[0_22px_45px_rgba(18,48,71,0.16)]">
+                    <div class="flex h-60 items-center justify-center">
+                        <img class="h-full w-full object-contain"
+                            src="./assets/images/products/product-img-3.jpg"
+                            alt="Lemon">
+                    </div>
+                    <div class="mt-4 text-center">
+                        <h3 class="text-3xl font-bold text-black">Lemon</h3>
+                        <p class="mt-2 text-gray-600">Per Kg</p>
+                        <p class="mt-2 text-4xl font-extrabold text-black">35$</p>
+                        <button data-product="Lemon" class="add-to-cart mt-5 w-full rounded-full bg-[#0f766e] px-4 py-3 text-lg font-bold text-white shadow-[0_12px_24px_rgba(15,118,110,0.25)] transition hover:-translate-y-0.5 hover:bg-[#facc15] hover:text-[#123047]">Add
+                            to Cart</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="scroll-mt-4 bg-white px-4 py-20 text-[#123047] sm:px-16">
+            <div class="mx-auto flex w-full flex-col items-center gap-14">
+                <div class="mx-auto w-full max-w-7xl text-center">
+                    <img class="mx-auto h-24 w-24 rounded-full object-cover"
+                        src="./assets/images/avatar1.png" alt="David Niph">
+                    <h2 class="mt-6 text-2xl font-extrabold text-[#123047]">Saira Hakim</h2>
+                    <p class="text-sm text-gray-500">Local shop owner</p>
+                    <p class="mt-6 text-base text-gray-600">
+                        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam eaque ipsa quae ab illo inventore."
+                    </p>
+                    <div class="mt-8 text-[#0f766e] text-5xl">"</div>
+                </div>
+
+                <div class="w-full flex flex-col gap-8 md:flex-row md:items-center justify-center">
+                    <div class="relative hidden md:block h-110 w-full md:w-135  overflow-hidden rounded-tr-2xl rounded-bl-2xl bg-[#f5f5f5]">
+                        <img class="h-full w-full object-cover"
+                            src="./assets/images/abt.jpg" alt="Fruit basket">
+                        <div class="absolute top-0 right-0 bottom-0 left-0 flex items-center justify-center bg-black/25">
+                            <div class="flex h-24 w-24 items-center justify-center rounded-full bg-[#facc15] text-[#123047] shadow-lg">
+                                <i class="fa-solid fa-play text-3xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 w-full max-w-2xl text-start md:mt-0">
+                        <p class="text-sm font-semibold text-gray-800">SINCE YEAR 1999</p>
+                        <h3 class="mt-4 text-4xl font-extrabold text-[#123047] sm:text-5xl">We are Fruitkha</h3>
+                        <p class="mt-4 text-base text-gray-700">
+                            Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac
+                            vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet
+                            sapien sed, interdum velit. Nam eu molestie lorem.
+                        </p>
+                        <p class="mt-4 text-base text-gray-700">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapiente facilis illo repellat
+                            veritatis minus, et labore minima mollitia qui ducimus.
+                        </p>
+                        <a href="#contact"
+                            class="mt-8 inline-block rounded-full bg-[#0f766e] px-8 py-3 text-lg font-bold text-white shadow-[0_12px_24px_rgba(15,118,110,0.25)] transition hover:-translate-y-0.5 hover:bg-[#facc15] hover:text-[#123047]">
+                            know more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sale" class="scroll-mt-4 relative overflow-hidden bg-[#f8fafc] sm:bg-[url('./assets/images/sale.jpg')] bg-cover bg-center text-[#123047]">
+            <div class=" px-4 py-16  sm:px-8 md:px-12 lg:px-16">
+                <div class="mx-auto flex max-w-6xl flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
+                    <div class="w-full lg:w-1/2">
+                        <h2 class="text-4xl font-extrabold leading-tight text-[#0f172a] sm:text-5xl lg:text-6xl">
+                            December sale is on!<br>
+                            with big <span class="text-[#0f766e]">Discount...</span>
+                        </h2>
+                        <div class="mt-10 flex flex-col items-start gap-3 text-[#0f172a] sm:flex-row sm:items-end">
+                            <span class="text-2xl font-semibold">Sale<br>upto!</span>
+                            <span class="text-6xl font-extrabold text-[#0f766e]">50%</span>
+                            <span class="text-lg">off</span>
+                        </div>
+                        <a href="#products" class="mt-10 inline-flex rounded-full bg-[#0f766e] px-8 py-4 text-lg font-bold text-white shadow-[0_12px_24px_rgba(15,118,110,0.25)] transition hover:-translate-y-0.5 hover:bg-[#facc15] hover:text-[#123047]">
+                            Shop Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="partners" class="scroll-mt-4 bg-[#ecfeff] px-4 py-12 text-[#123047] sm:px-16">
+            <div class="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-6 sm:gap-8">
+                <img src="./assets/images/company-logos/1.png" alt="Company logo 1" class="aspect-square h-auto w-full max-w-72 object-contain" />
+                <img src="./assets/images/company-logos/2.png" alt="Company logo 2" class="aspect-square h-auto w-full max-w-72 object-contain" />
+                <img src="./assets/images/company-logos/4.png" alt="Company logo 4" class="aspect-square h-auto w-full max-w-72 object-contain" />
+                
+                </div>
+        </section>
+        <div id="drawer-backdrop" class="fixed inset-0 z-[999] hidden bg-[#123047]/50 opacity-0 transition-opacity" onclick="sidemode()"></div>
+        <aside id="mobile-drawer" class="fixed left-0 top-0 z-[1000] h-full min-h-screen w-72 -translate-x-full bg-[#123047] text-white shadow-[20px_0_50px_rgba(18,48,71,0.22)] transition-transform duration-300" aria-label="Mobile navigation">
+            <div class="flex items-center justify-between border-b border-[#facc15] px-6 py-5">
+                <h2 class="text-xl font-bold">Menu</h2>
+                <button onclick="sidemode()" class="text-2xl hover:text-[#facc15]" aria-label="Close navigation menu">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+            </div>
+            <nav class="mt-6 space-y-4 px-6">
+                <a href="#home" data-mobile-nav class="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-[#facc15] hover:text-[#123047]">
+                    <i class="fa-solid fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" data-mobile-nav class="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-[#facc15] hover:text-[#123047]">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>About</span>
+                </a>
+                <a href="#products" data-mobile-nav class="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-[#facc15] hover:text-[#123047]">
+                    <i class="fa-solid fa-file"></i>
+                    <span>Pages</span>
+                </a>
+                <a href="#sale" data-mobile-nav class="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-[#facc15] hover:text-[#123047]">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <span>News</span>
+                </a>
+                <a href="#contact" data-mobile-nav class="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-[#facc15] hover:text-[#123047]">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+                <a href="#products" data-mobile-nav class="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-[#facc15] hover:text-[#123047]">
+                    <i class="fa-solid fa-shop"></i>
+                    <span>Shop</span>
+                </a>
+                <a href="#cart" data-mobile-nav class="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-[#facc15] hover:text-[#123047]">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart</span>
+                </a>
+            </nav>
+        </aside>
+
+        <footer id="contact" class="scroll-mt-4 bg-[#123047] px-4 py-16 text-white sm:px-16">
+            <div class="mx-auto max-w-7xl space-y-12">
+                <div class="flex flex-col flex-wrap gap-10 md:flex-row md:justify-between">
+                    <div id="cart" class="w-full md:w-[20%]">
+                        <h2 class="text-2xl font-bold">About us</h2>
+                        <div class="mt-3 h-1 w-12 rounded bg-[#facc15]"></div>
+                        <p class="mt-6 max-w-sm text-sm text-gray-300">
+                            Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+                        </p>
+                    </div>
+
+                    <div class="w-full md:w-[20%]">
+                        <h2 class="text-2xl font-bold">Get in Touch</h2>
+                        <div class="mt-3 h-1 w-12 rounded bg-[#facc15]"></div>
+                        <p class="mt-6 text-sm text-gray-300">34/8, East Hukupara, Gifirtok, Sadan.</p>
+                        <p class="mt-3 text-sm text-gray-300">support@fruitkha.com</p>
+                        <p class="mt-3 text-sm text-gray-300">+00 111 222 3333</p>
+                    </div>
+
+                    <div class="w-full md:w-[20%]">
+                        <h2 class="text-2xl font-bold">Pages</h2>
+                        <div class="mt-3 h-1 w-12 rounded bg-[#facc15]"></div>
+                        <ul class="mt-6 space-y-3 text-sm text-gray-300">
+                            <li><a href="#home" class="items-center gap-2 hover:text-white"><span class="text-[#facc15]">&rsaquo;</span> Home</a></li>
+                            <li><a href="#about" class="items-center gap-2 hover:text-white"><span class="text-[#facc15]">&rsaquo;</span> About</a></li>
+                            <li><a href="#products" class="items-center gap-2 hover:text-white"><span class="text-[#facc15]">&rsaquo;</span> Shop</a></li>
+                            <li><a href="#sale" class="items-center gap-2 hover:text-white"><span class="text-[#facc15]">&rsaquo;</span> News</a></li>
+                            <li><a href="#contact" class="items-center gap-2 hover:text-white"><span class="text-[#facc15]">&rsaquo;</span> Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="w-full md:w-[20%]">
+                        <h2 class="text-2xl font-bold">Subscribe</h2>
+                        <div class="mt-3 h-1 w-12 rounded bg-[#facc15]"></div>
+                        <p class="mt-6 max-w-xs text-sm text-gray-300">Subscribe to our mailing list to get the latest updates.</p>
+                        <form id="newsletter-form" class="mt-6 grid grid-cols-[minmax(0,1fr)_auto] gap-3">
+                            <input type="email" placeholder="Email"
+                                aria-label="Email address" required
+                                class="w-full rounded-lg border border-[#2b526a] bg-[#0f2f43] px-4 py-3 text-sm text-white placeholder:text-slate-400 focus:border-[#facc15] focus:outline-none" />
+                            <button type="submit" class="flex h-12 items-center justify-center rounded-lg bg-[#facc15] px-5 text-[#123047] hover:bg-[#fde047]" aria-label="Subscribe">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="border-t border-slate-700 flex flex-col items-center justify-center gap-4 pt-8 text-center text-sm text-gray-400 sm:flex-row sm:justify-between sm:text-left">
+                    <div>
+                        <p>Copyrights © 2019 - <span class="text-[#facc15]">Imran Hossain</span>, All Rights Reserved.</p>
+                        <p class="mt-4 sm:mt-0">Distributed By - <span class="text-[#facc15]">Themewagon</span></p>
+                    </div>
+                    <div class="flex items-center gap-4 text-xl text-white">
+                        <a href="#" class="hover:text-[#facc15]"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-[#facc15]"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="hover:text-[#facc15]"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-[#facc15]"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script>
+        const cartLink = document.querySelector('#cart-link');
+        const cartButtons = document.querySelectorAll('.add-to-cart');
+        const newsletterForm = document.querySelector('#newsletter-form');
+        const mobileNavLinks = document.querySelectorAll('[data-mobile-nav]');
+        const drawerBackdrop = document.querySelector('#drawer-backdrop');
+        let cartCount = 0;
+
+        function showMessage(message) {
+            const notice = document.createElement('div');
+            notice.textContent = message;
+            notice.className = 'fixed bottom-6 left-1/2 z-[2000] -translate-x-1/2 rounded-lg border-l-4 border-[#facc15] bg-[#123047] px-5 py-3 text-sm font-semibold text-white shadow-xl';
+            document.body.appendChild(notice);
+            window.setTimeout(() => notice.remove(), 2500);
+        }
+
+        function sidemode() {
+            const isOpen = !document.documentElement.classList.contains('side');
+            document.documentElement.classList.toggle('side', isOpen);
+            document.querySelector('#mobile-drawer').classList.toggle('-translate-x-full', !isOpen);
+            document.querySelector('#mobile-drawer').classList.toggle('translate-x-0', isOpen);
+            drawerBackdrop.classList.toggle('hidden', !isOpen);
+            window.requestAnimationFrame(() => drawerBackdrop.classList.toggle('opacity-0', !isOpen));
+            document.body.classList.toggle('overflow-hidden', isOpen);
+        }
+
+        cartButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                cartCount += 1;
+                cartLink.innerHTML = '<i class="fa-solid fa-cart-shopping"></i> ' + cartCount;
+                showMessage(button.dataset.product + ' added to your cart');
+            });
+        });
+
+        cartLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            showMessage(cartCount ? 'You have ' + cartCount + ' item(s) in your cart' : 'Your cart is empty');
+        });
+
+        mobileNavLinks.forEach((link) => link.addEventListener('click', sidemode));
+
+        newsletterForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            showMessage('Thanks for subscribing!');
+            newsletterForm.reset();
+        });
+    </script>
+</body>
+
+</html>
